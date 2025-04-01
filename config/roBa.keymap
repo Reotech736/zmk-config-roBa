@@ -67,21 +67,21 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                        &kp T                                                          &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F                        &kp G        &kp LS(LG(S))                      &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &kp COLON                          &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_HENKAN  &lt 2 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
+&kp Q      &kp L         &kp U         &kp COMMA    &kp V                                      &kp F          &kp W  &kp R  &kp Y  &kp P
+&kp E      &kp I         &kp A         &kp O        &kp MINUS    &kp ESC          &kp SPACE    &kp K          &kp T  &kp N  &kp S  &kp H
+&kp J      &kp X         &kp C         &kp DOT      &kp SEMI     &kp SPACE        &kp SPACE    &kp G          &kp D  &kp M  &kp Z  &kp B
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 SPACE  &lt 4 SPACE  &lt 3 SPACE      &lt 2 SPACE  &kp BACKSPACE                       &kp DEL
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
         };
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                          &kp F12
+&kp RA(Q)  &kp LC(W)  &trans  &trans   &trans                      &trans    &trans    &kp ENTER  &kp LC(S)  &trans
+&trans     &trans     &kp F7  &kp F10  &kp F2  &trans      &trans  &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &trans
+&trans     &trans     &trans  &trans   &trans  &trans      &trans  &trans    &trans    &trans     &trans     &trans
+&trans     &trans     &trans  &trans   &trans  &trans      &trans  &trans                                    &trans
             >;
         };
 
