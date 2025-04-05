@@ -24,10 +24,10 @@
 
         L0 {
             bindings = <
-&kp Q        &kp L         &kp U           &kp COMMA    &kp SEMICOLON                                &kp F          &kp W  &kp R  &kp Y  &kp P
-&kp E        &kp I         &kp A           &kp O        &kp MINUS      &kp ESC          &kp SPACE    &kp K          &kp T  &kp N  &kp S  &kp H
-&kp J        &kp X         &kp C           &kp V        &kp PERIOD     &eisuuzi         &kp SPACE    &kp G          &kp D  &kp M  &kp Z  &kp B
-&lt 5 SPACE  &kp LEFT_WIN  &lt 5 LEFT_ALT  &lt 1 SPACE  &lt 4 SPACE    &lt 3 SPACE      &lt 2 SPACE  &kp BACKSPACE                       &kp ESCAPE
+&kp Q             &kp L         &kp U           &kp COMMA    &kp SEMICOLON                                                 &kp F          &kp W  &kp R  &kp Y  &kp P
+&mt LEFT_SHIFT E  &kp I         &kp A           &kp O        &kp MINUS      &kp ESC                      &kp SPACE         &kp K          &kp T  &kp N  &kp S  &mt RIGHT_SHIFT H
+&kp J             &kp X         &kp C           &kp V        &kp PERIOD     &kp LANG_ZENKAKUHANKAKU      &kp SPACE         &kp G          &kp D  &kp M  &kp Z  &kp B
+&kp LCTRL         &kp LEFT_WIN  &lt 5 LEFT_ALT  &lt 1 SPACE  &mo 4          &mo 3                        &lt 2 LEFT_SHIFT  &kp BACKSPACE                       &kp ESCAPE
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
@@ -35,19 +35,19 @@
 
         L1 {
             bindings = <
-&kp RA(Q)  &kp LC(W)  &kp LC(A)  &kp F7     &kp ESCAPE                        &kp LC(E)  &kp LC(U)  &kp RET  &kp LC(S)  &trans
-&kp LC(R)  &kp LC(F)  &kp LC(A)  &kp F10    &kp F2      &trans        &trans  &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT  &trans
-&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Y)   &kp INT2      &trans  &kp HOME   &kp END    &trans   &trans     &trans
-&trans     &trans     &trans     &trans     &trans      &trans        &trans  &trans                                    &trans
+&kp RA(F4)  &kp LC(W)  &kp LC(A)  &kp F7     &kp ESCAPE                        &kp LC(E)   &kp LC(U)  &kp RET  &kp LC(S)  &trans
+&kp LC(R)   &kp LC(F)  &kp LC(A)  &kp F10    &kp F2      &trans        &trans  &kp LEFT    &kp DOWN   &kp UP   &kp RIGHT  &trans
+&kp LC(Z)   &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Y)   &kp INT2      &trans  &kp HOME    &kp END    &trans   &trans     &trans
+&trans      &trans     &trans     &trans     &trans      &trans        &trans  &kp DELETE                                 &trans
             >;
         };
 
         L2 {
             bindings = <
-&kp N1  &kp N2  &kp N3  &kp N4  &kp N5                      &trans  &trans  &trans  &trans  &trans
-&kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&kp N1  &kp N2          &kp N3     &kp N4   &kp N5                        &trans  &trans  &trans  &trans  &trans
+&kp N6  &kp N7          &kp N8     &kp N9   &kp N0    &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp UNDERSCORE  &kp TILDE  &kp DOT  &kp FSLH  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans          &trans     &trans   &trans    &trans      &trans  &trans                          &trans
             >;
         };
 
@@ -62,10 +62,10 @@
 
         L4 {
             bindings = <
-&kp LS(Q)  &kp LS(L)  &kp LS(U)  &kp LS(LT)  &kp LS(PLUS)                       &kp LS(F)  &kp LS(W)  &kp LS(R)  &kp LS(Y)  &kp LS(P)
-&kp LS(E)  &kp LS(I)  &kp LS(A)  &kp LS(O)   &kp LS(EQUAL)  &trans      &trans  &kp LS(K)  &kp LS(T)  &kp LS(N)  &kp LS(S)  &kp LS(H)
-&kp LS(J)  &kp LS(X)  &kp LS(C)  &kp LS(V)   &kp LS(GT)     &trans      &trans  &kp LS(G)  &kp LS(D)  &kp LS(M)  &kp LS(Z)  &kp LS(B)
-&trans     &trans     &trans     &trans      &trans         &trans      &trans  &trans                                      &trans
+&kp LS(Q)  &kp LS(L)  &kp LS(U)  &kp LS(LT)  &kp LS(PLUS)                      &kp LS(F)  &kp LS(W)  &kp LS(R)  &kp LS(Y)  &kp LS(P)
+&kp LS(E)  &kp LS(I)  &kp LS(A)  &kp LS(O)   &kp KP_EQUAL  &trans      &trans  &kp LS(K)  &kp LS(T)  &kp LS(N)  &kp LS(S)  &kp LS(H)
+&kp LS(J)  &kp LS(X)  &kp LS(C)  &kp LS(V)   &kp LS(GT)    &trans      &trans  &kp LS(G)  &kp LS(D)  &kp LS(M)  &kp LS(Z)  &kp LS(B)
+&trans     &trans     &trans     &trans      &trans        &trans      &trans  &trans                                      &trans
             >;
         };
 
