@@ -10,32 +10,15 @@
 / {
     combos { compatible = "zmk,combos"; };
 
-    macros {
-        to_romaji: to_romaji {
-            compatible = "zmk,behavior-macro";
-            label = "TO_ROMAJI";
-            #binding-cells = <0>;
-            bindings = <&kp LANG1>; // IME ON + ローマ字入力に切替
-        };
-
-        to_eisu: to_eisu {
-            compatible = "zmk,behavior-macro";
-            label = "TO_EISU";
-            #binding-cells = <0>;
-            bindings = <&kp LANG2>; // IME OFF（英数入力）に切替
-        };
-    };
-
-
     keymap {
         compatible = "zmk,keymap";
 
         L0 {
             bindings = <
-&kp Q           &kp L         &kp U         &kp COMMA    &kp SEMICOLON                                &kp F          &kp W  &kp R  &kp Y  &kp P
-&kp E           &kp I         &kp A         &kp O        &kp MINUS      &kp LA(LEFT)      &to_romaji  &kp K          &kp T  &kp N  &kp S  &kp H
-&kp J           &kp X         &kp C         &kp V        &kp PERIOD     &mkp MB1          &mkp MB2    &kp G          &kp D  &kp M  &kp Z  &kp B
-&kp LEFT_SHIFT  &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 SPACE  &kp SPACE      &mo 3             &lt 2 TAB   &kp BACKSPACE                       &kp RIGHT_CONTROL
+&kp Q           &kp L         &kp U         &kp COMMA    &kp SEMICOLON                               &kp F          &kp W  &kp R  &kp Y  &kp P
+&kp E           &kp I         &kp A         &kp O        &kp MINUS      &kp LA(LEFT)      &kp A      &kp K          &kp T  &kp N  &kp S  &kp H
+&kp J           &kp X         &kp C         &kp V        &kp PERIOD     &mkp MB1          &mkp MB2   &kp G          &kp D  &kp M  &kp Z  &kp B
+&kp LEFT_SHIFT  &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 SPACE  &kp SPACE      &mo 3             &lt 2 TAB  &kp BACKSPACE                       &kp RIGHT_CONTROL
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
@@ -44,7 +27,7 @@
         L1 {
             bindings = <
 &kp RA(F4)  &kp LC(W)  &kp LC(T)  &kp F7     &kp ESCAPE                                         &kp LC(E)   &kp LC(U)  &kp RET  &kp LC(S)  &trans
-&kp LC(R)   &kp LC(F)  &kp LC(A)  &kp F10    &kp F2      &kp RA(RIGHT)       &to_eisu           &kp LEFT    &kp DOWN   &kp UP   &kp RIGHT  &kp EXCLAMATION
+&kp LC(R)   &kp LC(F)  &kp LC(A)  &kp F10    &kp F2      &kp RA(RIGHT)       &kp NUMBER_1       &kp LEFT    &kp DOWN   &kp UP   &kp RIGHT  &kp EXCLAMATION
 &kp LC(Z)   &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Y)   &kp LEFT_SHIFT      &mkp MB3           &kp HOME    &kp END    &trans   &trans     &kp QUESTION
 &trans      &trans     &trans     &trans     &trans      &trans              &kp RIGHT_CONTROL  &kp DELETE                                 &trans
             >;
