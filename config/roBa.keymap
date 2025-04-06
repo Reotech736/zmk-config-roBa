@@ -24,10 +24,10 @@
 
         L0 {
             bindings = <
-&kp Q             &kp L         &kp U           &kp COMMA    &kp SEMICOLON                                                 &kp F          &kp W  &kp R  &kp Y  &kp P
-&mt LEFT_SHIFT E  &kp I         &kp A           &kp O        &kp MINUS      &kp ESC                      &kp SPACE         &kp K          &kp T  &kp N  &kp S  &mt RIGHT_SHIFT H
-&kp J             &kp X         &kp C           &kp V        &kp PERIOD     &kp LANG_ZENKAKUHANKAKU      &kp SPACE         &kp G          &kp D  &kp M  &kp Z  &kp B
-&kp LCTRL         &kp LEFT_WIN  &lt 5 LEFT_ALT  &lt 1 SPACE  &mo 4          &mo 3                        &lt 2 LEFT_SHIFT  &kp BACKSPACE                       &kp ESCAPE
+&kp Q             &kp L         &kp U           &kp COMMA    &kp SEMICOLON                                             &kp F          &kp W  &kp R  &kp Y  &kp P
+&mt LEFT_SHIFT E  &kp I         &kp A           &kp O        &kp MINUS      &kp LA(LEFT)      &kp LANG_ZENKAKUHANKAKU  &kp K          &kp T  &kp N  &kp S  &mt RIGHT_SHIFT H
+&kp J             &kp X         &kp C           &kp V        &kp PERIOD     &mkp MB1          &mkp MB2                 &kp G          &kp D  &kp M  &kp Z  &kp B
+&kp LCTRL         &kp LEFT_WIN  &lt 5 LEFT_ALT  &lt 1 SPACE  &mo 4          &mo 3             &lt 2 LEFT_SHIFT         &kp BACKSPACE                       &kp SLASH
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
@@ -35,11 +35,13 @@
 
         L1 {
             bindings = <
-&kp RA(F4)  &kp LC(W)  &kp LC(A)  &kp F7     &kp ESCAPE                        &kp LC(E)   &kp LC(U)  &kp RET  &kp LC(S)  &trans
-&kp LC(R)   &kp LC(F)  &kp LC(A)  &kp F10    &kp F2      &trans        &trans  &kp LEFT    &kp DOWN   &kp UP   &kp RIGHT  &trans
-&kp LC(Z)   &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Y)   &kp INT2      &trans  &kp HOME    &kp END    &trans   &trans     &trans
-&trans      &trans     &trans     &trans     &trans      &trans        &trans  &kp DELETE                                 &trans
+&kp RA(F4)  &kp LC(W)  &kp LC(A)  &kp F7     &kp ESCAPE                              &kp LC(E)   &kp LC(U)  &kp RET  &kp LC(S)  &trans
+&kp LC(R)   &kp LC(F)  &kp LC(A)  &kp F10    &kp F2      &kp LEFT_ALT      &trans    &kp LEFT    &kp DOWN   &kp UP   &kp RIGHT  &trans
+&kp LC(Z)   &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Y)   &trans            &mkp MB3  &kp HOME    &kp END    &trans   &trans     &trans
+&trans      &trans     &trans     &trans     &trans      &trans            &kp TAB   &kp DELETE                                 &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
         };
 
         L2 {
@@ -53,10 +55,10 @@
 
         L3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
 
