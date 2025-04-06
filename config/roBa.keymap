@@ -10,6 +10,24 @@
 / {
     combos { compatible = "zmk,combos"; };
 
+    macros {
+        romaji_on: romaji_on {
+            compatible = "zmk,behavior-macro";
+            label = "ROMAJI_ON";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(CAPS))>;
+        };
+
+        eisu: eisu {
+            compatible = "zmk,behavior-macro";
+            label = "EISU_OFF";
+            #binding-cells = <0>;
+            bindings = <&kp LC(CAPS)>;
+        };
+    };
+
+
+
     keymap {
         compatible = "zmk,keymap";
 
