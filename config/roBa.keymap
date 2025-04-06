@@ -10,21 +10,22 @@
 / {
     combos { compatible = "zmk,combos"; };
 
-    macros {
-        romaji_on: romaji_on {
-            compatible = "zmk,behavior-macro";
-            label = "ROMAJI_ON";
-            #binding-cells = <0>;
-            bindings = <&kp LC(LS(CAPS))>;
-        };
-
-        eisu: eisu {
-            compatible = "zmk,behavior-macro";
-            label = "EISU_OFF";
-            #binding-cells = <0>;
-            bindings = <&kp LC(CAPS)>;
-        };
+macros {
+    to_romaji: to_romaji {
+        compatible = "zmk,behavior-macro";
+        label = "TO_ROMAJI";
+        #binding-cells = <0>;
+        bindings = <&kp LANG_ZENKAKUHANKAKU>;
     };
+
+    to_eisu: to_eisu {
+        compatible = "zmk,behavior-macro";
+        label = "TO_EISU";
+        #binding-cells = <0>;
+        bindings = <&kp LANG1>; // or LC(CAPS) if LANG1 not usable
+    };
+};
+
 
     keymap {
         compatible = "zmk,keymap";
