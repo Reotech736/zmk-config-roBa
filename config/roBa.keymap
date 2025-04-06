@@ -55,7 +55,7 @@
             bindings = <
 &kp N1  &kp N2     &kp N3     &kp N4  &kp N5                               &trans  &trans  &trans  &trans  &trans
 &kp N6  &kp N7     &kp N8     &kp N9  &kp N0     &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp UNDER  &kp TILDE  &trans  &kp SLASH  &kp ASTERISK      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LS(MINUS)  &kp LS(EQUAL)  &kp PERIOD  &kp SLASH  &kp LS(8)     &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans     &trans     &trans  &trans     &trans            &trans  &trans                          &trans
             >;
         };
