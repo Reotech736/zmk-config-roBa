@@ -10,6 +10,23 @@
 / {
     combos { compatible = "zmk,combos"; };
 
+macros {
+    to_romaji: to_romaji {
+        compatible = "zmk,behavior-macro";
+        label = "TO_ROMAJI";
+        #binding-cells = <0>;
+        bindings = <&kp LANG1>; // IME ON + ローマ字入力に切替
+    };
+
+    to_eisu: to_eisu {
+        compatible = "zmk,behavior-macro";
+        label = "TO_EISU";
+        #binding-cells = <0>;
+        bindings = <&kp LANG2>; // IME OFF（英数入力）に切替
+    };
+};
+
+
     keymap {
         compatible = "zmk,keymap";
 
