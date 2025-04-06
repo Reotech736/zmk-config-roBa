@@ -31,10 +31,10 @@
 
         L0 {
             bindings = <
-&kp Q           &kp L         &kp U         &kp COMMA    &kp SEMICOLON                                &kp F          &kp W  &kp R  &kp Y  &kp P
-&kp E           &kp I         &kp A         &kp O        &kp MINUS      &kp LA(LEFT)      &to_romaji  &kp K          &kp T  &kp N  &kp S  &kp H
-&kp J           &kp X         &kp C         &kp V        &kp PERIOD     &mkp MB1          &to_eisu    &kp G          &kp D  &kp M  &kp Z  &kp B
-&kp LEFT_SHIFT  &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 SPACE  &kp SPACE      &mo 3             &lt 2 TAB   &kp BACKSPACE                       &kp RIGHT_CONTROL
+&kp Q           &kp L         &kp U         &kp COMMA    &kp SEMICOLON                                       &kp F          &kp W  &kp R  &kp Y  &kp P
+&kp E           &kp I         &kp A         &kp O        &kp MINUS             &kp LA(LEFT)      &to_romaji  &kp K          &kp T  &kp N  &kp S  &kp H
+&kp J           &kp X         &kp C         &kp V        &kp PERIOD            &mkp MB1          &to_eisu    &kp G          &kp D  &kp M  &kp Z  &kp B
+&kp LEFT_SHIFT  &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 SPACE  &mt LEFT_SHIFT SPACE  &mo 3             &lt 2 TAB   &kp BACKSPACE                       &kp RIGHT_CONTROL
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
@@ -53,10 +53,10 @@
 
         L2 {
             bindings = <
-&kp N1  &kp N2     &kp N3     &kp N4  &kp N5                               &trans  &trans  &trans  &trans  &trans
-&kp N6  &kp N7     &kp N8     &kp N9  &kp N0     &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LS(MINUS)  &kp LS(EQUAL)  &kp PERIOD  &kp SLASH  &kp LS(8)     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &trans     &trans  &trans     &trans            &trans  &trans                          &trans
+&kp N1       &kp N2         &kp N3         &kp N4      &kp N5                                           &kp LS(N6)       &kp GRAVE          &trans  &trans  &trans
+&kp N6       &kp N7         &kp N8         &kp N9      &kp N0            &trans          &kp BACKSLASH  &kp LEFT_BRACE   &kp LEFT_BRACKET   &trans  &trans  &trans
+&kp AT_SIGN  &kp LS(MINUS)  &kp LS(EQUAL)  &kp PERIOD  &kp SLASH         &kp LS(N8)      &kp COLON      &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &trans  &trans  &trans
+&trans       &trans         &trans         &trans      &mt LSHIFT SPACE  &trans          &trans         &trans                                              &trans
             >;
         };
 
