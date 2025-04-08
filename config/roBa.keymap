@@ -34,7 +34,7 @@
 &kp Q           &kp L         &kp U         &kp COMMA    &kp SEMICOLON                                       &kp F          &kp W  &kp R  &kp Y  &kp P
 &kp E           &kp I         &kp A         &kp O        &kp MINUS             &kp LA(LEFT)      &to_romaji  &kp K          &kp T  &kp N  &kp S  &kp H
 &kp J           &kp X         &kp C         &kp V        &kp PERIOD            &mkp MB1          &to_eisu    &kp G          &kp D  &kp M  &kp Z  &kp B
-&kp LEFT_SHIFT  &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 SPACE  &mt LEFT_SHIFT SPACE  &mo 3             &lt 2 TAB   &kp BACKSPACE                       &kp RIGHT_CONTROL
+&kp LEFT_SHIFT  &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 SPACE  &mt LEFT_SHIFT SPACE  &mo 4             &lt 2 TAB   &kp BACKSPACE                       &kp RIGHT_CONTROL
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
@@ -42,10 +42,10 @@
 
         L1 {
             bindings = <
-&kp RA(F4)  &kp LC(W)     &kp LC(T)     &kp F7     &kp ESCAPE                                         &kp LC(E)   &kp LC(U)  &kp RET  &kp LC(S)  &trans
-&kp LC(R)   &kp LC(F)     &kp LC(A)     &kp F10    &kp F2      &kp RA(RIGHT)       &mkp MB3           &kp LEFT    &kp DOWN   &kp UP   &kp RIGHT  &kp EXCLAMATION
-&kp LC(Z)   &kp LC(X)     &kp LC(C)     &kp LC(V)  &kp LC(Y)   &kp LEFT_SHIFT      &mkp MB2           &kp HOME    &kp END    &trans   &trans     &kp QUESTION
-&trans      &bt BT_SEL 1  &bt BT_SEL 0  &trans     &trans      &trans              &kp RIGHT_CONTROL  &kp DELETE                                 &trans
+&kp RA(F4)    &kp LC(W)     &kp LC(T)     &kp F7     &kp ESCAPE                                         &kp LC(E)   &kp LC(U)  &kp RET  &kp LC(S)  &trans
+&kp LC(R)     &kp LC(F)     &kp LC(A)     &kp F10    &kp F2      &kp RA(RIGHT)       &mkp MB3           &kp LEFT    &kp DOWN   &kp UP   &kp RIGHT  &kp EXCLAMATION
+&kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)  &kp LC(Y)   &kp LEFT_SHIFT      &mkp MB2           &kp HOME    &kp END    &trans   &trans     &kp QUESTION
+&bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &trans     &trans      &trans              &kp RIGHT_CONTROL  &kp DELETE                                 &kp NON_US_BSLH
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
@@ -53,10 +53,10 @@
 
         L2 {
             bindings = <
-&kp N1            &kp N2        &kp N3         &kp N4      &kp N5                                      &trans  &trans  &trans  &trans  &trans
-&kp N6            &kp N7        &kp N8         &kp N9      &kp N0            &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_BRACKET  &kp LS(INT1)  &kp LS(EQUAL)  &kp PERIOD  &kp SLASH         &kp LS(INT2)      &trans  &trans  &trans  &trans  &trans  &trans
-&trans            &trans        &trans         &trans      &mt LSHIFT SPACE  &trans            &trans  &trans                          &trans
+&kp N1            &kp N2             &kp N3         &kp N4                &kp N5                                          &trans  &trans  &trans  &trans  &trans
+&kp N6            &kp N7             &kp N8         &kp N9                &kp N0            &trans                &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_BRACKET  &kp INT1           &kp LS(EQUAL)  &kp PERIOD            &kp SLASH         &kp SINGLE_QUOTE      &trans  &trans  &trans  &trans  &trans  &trans
+&kp INT3          &kp RIGHT_BRACKET  &kp INT6       &mt LEFT_SHIFT SPACE  &mt LSHIFT SPACE  &mo 5                 &trans  &trans                          &trans
             >;
         };
 
@@ -69,16 +69,16 @@
             >;
         };
 
-        layer_5 {
+        L4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&kp F1          &kp F2      &kp F3  &kp F4  &kp F5                       &trans  &trans  &trans  &trans  &trans
+&kp F6          &kp F7      &kp F8  &kp F9  &kp F10  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&kp F11         &kp F12     &trans  &trans  &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_CLR_ALL  &bt BT_CLR  &trans  &trans  &trans   &trans      &trans  &trans                          &trans
             >;
         };
 
-        layer_6 {
+        L5 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
