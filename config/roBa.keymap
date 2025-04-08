@@ -42,10 +42,10 @@
 
         L1 {
             bindings = <
-&kp RA(F4)    &kp LC(W)     &kp LC(T)     &kp F7     &kp ESCAPE                                         &kp LC(E)   &kp LC(U)  &kp RET  &kp LC(S)  &msc SCRL_DOWN
+&kp RA(F4)    &kp LC(W)     &kp LC(T)     &kp F7     &kp ESCAPE                                         &kp LC(E)   &kp LC(U)  &kp RET  &kp LC(S)  &kp K_SCROLL_UP
 &kp LC(R)     &kp LC(F)     &kp LC(A)     &kp F10    &kp F2      &kp RA(RIGHT)       &mkp MB3           &kp LEFT    &kp DOWN   &kp UP   &kp RIGHT  &kp EXCLAMATION
 &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)  &kp LC(Y)   &kp LEFT_SHIFT      &mkp MB2           &kp HOME    &kp END    &trans   &trans     &kp QUESTION
-&bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &trans     &trans      &trans              &kp RIGHT_CONTROL  &kp DELETE                                 &trans
+&bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &trans     &trans      &trans              &kp RIGHT_CONTROL  &kp DELETE                                 &kp K_SCROLL_DOWN
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
