@@ -32,8 +32,8 @@
         L0 {
             bindings = <
 &kp Q           &kp L         &kp U         &kp COMMA    &kp SEMI                                            &kp F          &kp W  &kp R  &kp Y  &kp P
-&kp E           &kp I         &kp A         &kp O        &kp MINUS             &kp LA(LEFT)      &to_romaji  &kp K          &kp T  &kp N  &kp S  &kp H
-&kp J           &kp X         &kp C         &kp V        &kp PERIOD            &mkp MB1          &to_eisu    &kp G          &kp D  &kp M  &kp Z  &kp B
+&kp E           &kp I         &kp A         &kp O        &kp MINUS             &kp LA(LEFT)      &mkp MB3    &kp K          &kp T  &kp N  &kp S  &kp H
+&kp J           &kp X         &kp C         &kp V        &kp PERIOD            &mkp MB1          &mkp MB2    &kp G          &kp D  &kp M  &kp Z  &kp B
 &kp LEFT_SHIFT  &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 SPACE  &mt LEFT_SHIFT SPACE  &mo 3             &lt 2 TAB   &kp BACKSPACE                       &kp RIGHT_CONTROL
             >;
 
@@ -42,10 +42,10 @@
 
         L1 {
             bindings = <
-&kp RA(F4)    &kp LC(W)     &kp LC(T)     &kp F7     &kp ESCAPE                                         &kp LC(E)   &kp LC(U)  &kp RET           &kp LC(S)          &kp LANG1
-&kp LC(R)     &kp LC(F)     &kp LC(A)     &kp F10    &kp F2      &kp RA(RIGHT)       &mkp MB3           &kp LEFT    &kp DOWN   &kp UP            &kp RIGHT          &kp QUESTION
-&kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)  &kp LC(Y)   &kp LEFT_SHIFT      &mkp MB2           &kp HOME    &kp END    &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp EXCLAMATION
-&bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &trans     &trans      &trans              &kp RIGHT_CONTROL  &kp DELETE                                                  &kp LANG2
+&kp RA(F4)    &kp LC(W)     &kp LC(T)     &kp F7     &kp ESCAPE                                         &kp LC(E)   &kp LC(U)  &kp RET           &kp LC(S)          &kp LC(H)
+&to_romaji    &to_eisu      &kp LC(A)     &kp F10    &kp F2      &kp RA(RIGHT)       &kp LC(R)          &kp LEFT    &kp DOWN   &kp UP            &kp RIGHT          &kp QUESTION
+&kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)  &kp LC(Y)   &kp LEFT_SHIFT      &kp LC(F)          &kp HOME    &kp END    &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp EXCLAMATION
+&bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &trans     &trans      &trans              &kp RIGHT_CONTROL  &kp DELETE                                                  &kp 
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
