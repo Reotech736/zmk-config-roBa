@@ -45,7 +45,7 @@
 &kp RA(F4)    &kp LC(W)     &kp LC(T)     &kp F7     &kp ESCAPE                                         &kp LC(E)   &kp LC(U)  &kp RET           &kp LC(S)          &kp LC(H)
 &to_romaji    &to_eisu      &kp LC(A)     &kp F10    &kp F2      &kp RA(RIGHT)       &kp LC(R)          &kp LEFT    &kp DOWN   &kp UP            &kp RIGHT          &kp QUESTION
 &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)  &kp LC(Y)   &kp LEFT_SHIFT      &kp LC(F)          &kp HOME    &kp END    &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp EXCLAMATION
-&bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &trans     &trans      &trans              &kp RIGHT_CONTROL  &kp DELETE                                                  &kp 
+&bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &trans     &trans      &trans              &kp RIGHT_CONTROL  &kp DELETE                                                  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
