@@ -42,6 +42,15 @@
 
             tap-ms = <20>;
         };
+
+        encoder_msc_detail_down_up: encoder_msc_detail_down_up {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ENCODER_MSC_DETAIL_DOWN_UP";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc MOVE_Y(-20)>, <&msc MOVE_Y(20)>;
+
+            tap-ms = <20>;
+        };
     };
 
     keymap {
@@ -77,15 +86,15 @@
 &kp INT3          &kp RIGHT_BRACKET  &trans     &mt LEFT_CONTROL SPACE  &mt LEFT_SHIFT SPACE  &kp SPACE             &trans  &trans                          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_DOWN>;
+            sensor-bindings = <&encoder_msc_detail_down_up>;
         };
 
         L3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans          &trans          &trans        &trans           &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans          &trans          &trans        &trans           &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                         &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
 
