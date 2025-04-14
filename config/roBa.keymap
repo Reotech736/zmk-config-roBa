@@ -85,8 +85,6 @@
 &kp LEFT_BRACKET  &kp INT1           &kp EQUAL  &kp PERIOD              &kp SLASH             &kp SINGLE_QUOTE      &trans  &trans  &trans  &trans  &trans  &trans
 &kp INT3          &kp RIGHT_BRACKET  &trans     &mt LEFT_CONTROL SPACE  &mt LEFT_SHIFT SPACE  &kp SPACE             &trans  &trans                          &trans
             >;
-
-            sensor-bindings = <&encoder_msc_detail_down_up>;
         };
 
         L3 {
