@@ -22,6 +22,62 @@
             #binding-cells = <0>;
             bindings = <&kp LANG2>; // IME OFF（英数入力）に切替
         };
+
+        macro_parentheses1_to_eisu: parentheses {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to_eisu &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT>;
+            label = "PARENTHESES";
+        };
+
+        macro_dqt: macro_dqt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to_eisu &kp DOUBLE_QUOTES &kp DOUBLE_QUOTES &kp LEFT>;
+            label = "MACRO_DQT";
+        };
+
+        macro_parentheses2_to_eisu: macro_parentheses2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to_eisu &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT>;
+            label = "MACRO_PARENTHESES2";
+        };
+
+        macro_parentheses2_to_romaji1: macro_parentheses1_to_romaji1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to_eisu &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT &to_romaji>;
+            label = "MACRO_PARENTHESES1_TO_ROMAJI1";
+        };
+
+        macro_parentheses1_to_romaji: macro_parentheses1_to_romaji {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to_eisu &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT &to_romaji>;
+            label = "MACRO_PARENTHESES1_TO_ROMAJI";
+        };
+
+        student_number: student_number {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp B &kp N1 &kp N8 &kp N1 &kp N9 &kp N5 &kp N2>;
+            label = "STUDENT_NUMBER";
+        };
+
+        macro_source_code: macro_source_code {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to_eisu &kp GRAVE &kp GRAVE &kp GRAVE &kp ENTER &kp ENTER &kp GRAVE &kp GRAVE &kp GRAVE &kp UP &kp LEFT>;
+            label = "MACRO_SOURCE_CODE";
+        };
+
+        macro_file: macro_file {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to_eisu &kp GRAVE &kp GRAVE &kp LEFT>;
+            label = "MACRO_FILE";
+        };
     };
 
     behaviors {
@@ -71,10 +127,10 @@
 
         L2 {
             bindings = <
-&kp N1            &kp N2             &kp N3         &kp N4                  &kp N5                                           &trans  &trans  &trans  &trans  &trans
-&kp N6            &kp N7             &kp N8         &kp N9                  &kp N0                &trans             &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE      &kp SLASH               &kp PERIOD            &kp SEMICOLON      &trans  &trans  &trans  &trans  &trans  &trans
-&kp SPACE         &kp SQT            &kp BACKSLASH  &mt LEFT_CONTROL SPACE  &mt LEFT_SHIFT SPACE  &kp LEFT_WIN       &trans  &trans                          &kp RC(RSHIFT)
+&kp N1            &kp N2             &kp N3         &kp N4     &kp N5                                          &macro_source_code              &macro_file                  &trans  &trans  &trans
+&kp N6            &kp N7             &kp N8         &kp N9     &kp N0      &trans             &student_number  &macro_parentheses2_to_romaji1  &macro_parentheses2_to_eisu  &trans  &trans  &trans
+&kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE      &kp SLASH  &kp PERIOD  &kp SEMICOLON      &macro_dqt       &macro_parentheses1_to_romaji   &macro_parentheses1_to_eisu  &trans  &trans  &trans
+&kp SPACE         &kp SQT            &kp BACKSLASH  &trans     &trans      &kp LEFT_WIN       &trans           &trans                                                                       &kp RC(RSHIFT)
             >;
         };
 
