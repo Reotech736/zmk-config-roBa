@@ -49,10 +49,10 @@
 
         L0 {
             bindings = <
-&kp Q           &kp L         &kp U         &kp COMMA  &kp SEMI                                                      &kp F          &kp W  &kp R  &kp Y  &kp P
+&kp Q           &kp L         &kp U         &kp COMMA  &kp EQUAL                                                     &kp F          &kp W  &kp R  &kp Y  &kp P
 &kp E           &kp I         &kp A         &kp O      &kp MINUS             &kp LA(LEFT)                 &mkp MB3   &kp K          &kp T  &kp N  &kp S  &kp H
 &kp J           &kp X         &kp C         &kp V      &kp PERIOD            &mkp MB1                     &mkp MB2   &kp G          &kp D  &kp M  &kp Z  &kp B
-&kp LEFT_SHIFT  &kp LEFT_WIN  &kp LEFT_ALT  &mo 1      &mt LEFT_SHIFT SPACE  &mt RIGHT_CONTROL SPACE      &lt 2 TAB  &kp BACKSPACE                       &kp RIGHT_CONTROL
+&kp LEFT_SHIFT  &kp LEFT_WIN  &kp LEFT_ALT  &mo 1      &mt LEFT_SHIFT SPACE  &mt RIGHT_CONTROL SPACE      &lt 2 TAB  &kp BACKSPACE                       &kp RS(RIGHT_CONTROL)
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -71,10 +71,10 @@
 
         L2 {
             bindings = <
-&kp N1            &kp N2             &kp N3     &kp N4                  &kp N5                                              &trans  &trans  &trans  &trans  &trans
-&kp N6            &kp N7             &kp N8     &kp N9                  &kp N0                &trans                &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_BRACKET  &kp INT1           &kp EQUAL  &kp PERIOD              &kp SLASH             &kp SINGLE_QUOTE      &trans  &trans  &trans  &trans  &trans  &trans
-&kp INT3          &kp RIGHT_BRACKET  &trans     &mt LEFT_CONTROL SPACE  &mt LEFT_SHIFT SPACE  &kp SPACE             &trans  &trans                          &trans
+&kp N1            &kp N2             &kp N3         &kp N4                  &kp N5                                           &trans  &trans  &trans  &trans  &trans
+&kp N6            &kp N7             &kp N8         &kp N9                  &kp N0                &trans             &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE      &kp SLASH               &kp PERIOD            &kp SEMICOLON      &trans  &trans  &trans  &trans  &trans  &trans
+&kp SPACE         &kp SQT            &kp BACKSLASH  &mt LEFT_CONTROL SPACE  &mt LEFT_SHIFT SPACE  &kp LEFT_WIN       &trans  &trans                          &kp RC(RSHIFT)
             >;
         };
 
