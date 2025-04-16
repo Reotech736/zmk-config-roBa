@@ -23,7 +23,7 @@
             bindings = <&kp LANG2>; // IME OFF（英数入力）に切替
         };
 
-        macro_parentheses1_to_eisu: parentheses {
+        parentheses1_to_eisu: parentheses {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&to_eisu &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT>;
@@ -37,21 +37,21 @@
             label = "MACRO_DQT";
         };
 
-        macro_parentheses2_to_eisu: macro_parentheses2 {
+        parentheses2_to_eisu: macro_parentheses2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&to_eisu &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT>;
             label = "MACRO_PARENTHESES2";
         };
 
-        macro_parentheses2_to_romaji1: macro_parentheses1_to_romaji1 {
+        parentheses2_to_romaji1: macro_parentheses1_to_romaji1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&to_eisu &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT &to_romaji>;
             label = "MACRO_PARENTHESES1_TO_ROMAJI1";
         };
 
-        macro_parentheses1_to_romaji: macro_parentheses1_to_romaji {
+        parentheses1_to_romaji: macro_parentheses1_to_romaji {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&to_eisu &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT &to_romaji>;
@@ -65,7 +65,7 @@
             label = "STUDENT_NUMBER";
         };
 
-        macro_source_code: macro_source_code {
+        source_code: macro_source_code {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&to_eisu &kp GRAVE &kp GRAVE &kp GRAVE &kp ENTER &kp ENTER &kp GRAVE &kp GRAVE &kp GRAVE &kp UP &kp LEFT>;
@@ -77,6 +77,27 @@
             #binding-cells = <0>;
             bindings = <&to_eisu &kp GRAVE &kp GRAVE &kp LEFT>;
             label = "MACRO_FILE";
+        };
+
+        myname: name {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp K &kp O &kp M &kp A &kp T &kp S &kp U &kp B &kp A &kp R &kp A>;
+            label = "NAME";
+        };
+
+        key1: key1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp K &kp M &kp T &kp B &kp R &kp R &kp E &kp N0>;
+            label = "KEY1";
+        };
+
+        key2: key2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp K &kp N0 &kp M &kp T &kp B &kp R &kp E &kp N0>;
+            label = "KEY2";
         };
     };
 
@@ -127,10 +148,10 @@
 
         L2 {
             bindings = <
-&kp N1            &kp N2             &kp N3         &kp N4     &kp N5                                          &macro_source_code              &macro_file                  &trans  &trans  &trans
-&kp N6            &kp N7             &kp N8         &kp N9     &kp N0      &trans             &student_number  &macro_parentheses2_to_romaji1  &macro_parentheses2_to_eisu  &trans  &trans  &trans
-&kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE      &kp SLASH  &kp PERIOD  &kp SEMICOLON      &macro_dqt       &macro_parentheses1_to_romaji   &macro_parentheses1_to_eisu  &trans  &trans  &trans
-&kp SPACE         &kp SQT            &kp BACKSLASH  &trans     &trans      &kp LEFT_WIN       &trans           &trans                                                                       &kp RC(RSHIFT)
+&kp N1            &kp N2             &kp N3         &kp N4     &kp N5                                          &source_code              &macro_file            &macro_dqt  &trans  &trans
+&kp N6            &kp N7             &kp N8         &kp N9     &kp N0      &trans             &myname          &parentheses2_to_romaji1  &parentheses2_to_eisu  &key1       &trans  &trans
+&kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE      &kp SLASH  &kp PERIOD  &kp SEMICOLON      &student_number  &parentheses1_to_romaji   &parentheses1_to_eisu  &key2       &trans  &trans
+&kp SPACE         &kp SQT            &kp BACKSLASH  &trans     &trans      &kp LEFT_WIN       &trans           &trans                                                               &kp RC(RSHIFT)
             >;
         };
 
